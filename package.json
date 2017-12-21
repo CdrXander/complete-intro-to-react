@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "api": "node ratingsAPI.js"
+    "api": "node ratingsAPI.js",
+    "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
+    "lint":"eslint **/*.{js,jsx} --quiet"
   },
   "dependencies": {
     "axios": "0.16.1",
@@ -37,7 +39,7 @@
     "babel-preset-env": "1.5.1",
     "babel-preset-react": "6.24.1",
     "enzyme": "2.8.2",
-    "eslint": "3.19.0",
+    "eslint": "^4.13.1",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.1.1",
     "eslint-config-react": "1.1.7",
